@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #e8edff, #f9f0ff);
+    color: #24345e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.tag {
+    color: #e67e22;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: clamp(27px, 5vw, 40px);
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #69738d;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.counter-card {
+    background: white;
+    padding: 28px;
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(43, 53, 100, 0.12);
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 230px;
+    resize: vertical;
+    border: 2px solid #e1e6f5;
+    border-radius: 12px;
+    padding: 16px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #24345e;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    border-color: #6575e8;
+}
+
+textarea::placeholder {
+    color: #a0a8bb;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0 22px;
+}
+
+#status {
+    color: #78819a;
+    font-size: 12px;
+}
+
+button {
+    background: #5968db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 17px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #404fbd;
+    transform: translateY(-1px);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.stat-box {
+    background: #f5f6ff;
+    border: 1px solid #eaecfa;
+    border-radius: 13px;
+    padding: 20px 8px;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    color: #5866d8;
+    font-size: 28px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.stat-label {
+    display: block;
+    color: #727b95;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    color: #818aa2;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+@media (max-width: 600px) {
+    .counter-card {
+        padding: 18px;
+    }
+
+    textarea {
+        min-height: 190px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-number {
+        font-size: 25px;
+    }
+}
